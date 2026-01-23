@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Methods Demo</title>
+</head>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<p id="output"></p>
+
+<button onclick="showArray()">Show Array</button>
+<button onclick="doubleArray()">Double Values</button>
+<button onclick="filterArray()">Show Values > 10</button>
+
+<script>
+  let numbers = [5, 10, 15, 20];
+
+  function showArray() {
+    document.getElementById("output").innerHTML = numbers.join(", ");
+  }
+
+  function doubleArray() {
+    let doubled = numbers.map(num => num * 2);
+    document.getElementById("output").innerHTML = doubled.join(", ");
+  }
+
+  function filterArray() {
+    let filtered = numbers.filter(num => num > 10);
+    document.getElementById("output").innerHTML = filtered.join(", ");
+  }
+</script>
+
+</body>
+</html>
