@@ -1,0 +1,61 @@
+/* CSS Selectors */
+#header {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Text styling and fonts */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: navy;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Image styling */
+img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Box Model */
+.card {
+  padding: 15px;
+  margin: 20px;
+  border: 2px solid #ccc;
+}
+
+/* Layout */
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;  
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .main {
+    width: 95%;
+  }
+}
