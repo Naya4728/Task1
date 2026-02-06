@@ -1,0 +1,45 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: navy;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card, .card-primary {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  background: white;
+}
+
+.card h2, .card-primary h2 {
+  color: navy;
+}
+
+.card-primary {
+  background: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}

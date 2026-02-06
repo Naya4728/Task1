@@ -1,0 +1,40 @@
+@use 'variables';
+@use 'mixins';
+
+body {
+  font-family: Arial, sans-serif;
+  color: variables.$text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: variables.$primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  @include mixins.flex-center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid variables.$border-color;
+  padding: 20px;
+  width: 300px;
+  background: white;
+
+  h2 {
+    color: variables.$primary-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
